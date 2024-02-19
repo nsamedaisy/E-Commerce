@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/api/products")
+    axios("/api/products")
       .then((response) => response.json())
-      .then((data) => setProducts(data))
+      .then((data) => {
+        console.log(data); // Check if data is received correctly
+        setProducts(data);
+      })
       .catch((error) => console.error("Error:", error));
   }, []);
 
