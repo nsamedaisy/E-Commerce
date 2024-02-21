@@ -6,7 +6,7 @@ const HomePage = () => {
       <header>
         <div
           className="top-header"
-          style={{ backgroundImage: "url('./img.jpg')" }}
+          style={{ backgroundImage: "url('./assets/img.jpg')" }}
         >
           {/* Background image goes here */}
         </div>
