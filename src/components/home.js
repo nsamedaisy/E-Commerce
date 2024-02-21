@@ -1,20 +1,21 @@
 import React from "react";
+import Image from "../assets/img.jpg";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg-blue-500">
       <header>
-        <div
-          className="top-header"
-          style={{ backgroundImage: "url('./assets/img.jpg')" }}
-        >
+        <div className="top-header">
+          <img src={Image} alt="header" className="h-64" />
           {/* Background image goes here */}
         </div>
         <div className="bottom-header">
           <nav>
             <ul>
               <li>
-                <a href="/body-care">Body Care</a>
+                <a href="/body-care" className="text-bold text-6xl">
+                  Body Care
+                </a>
               </li>
               <li>
                 <a href="/home-fragrance">Home Fragrance</a>
