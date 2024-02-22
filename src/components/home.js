@@ -12,21 +12,26 @@ const HomePage = () => {
           {/* Background image goes here */}
         </div>
 
-        <div className="flex items-center bg-white rounded-md px-2 py-1 border">
-          <input
-            type="text"
-            placeholder="Search"
-            className="w-40 p-1 focus:outline-none"
-          />
-          <span className="ml-2">
-            <FiSearch className="w-5 h-5" />
+        <div className="flex pt-10 ml-[48%] mr-32 items-center pb-10">
+          <h1 className="text-4xl font-serif font-bold mr-52">SweetCent</h1>
+
+          <div className="flex items-center border px-2 py-1 w-80">
+            <input
+              type="text"
+              placeholder="Search by fragrance ..."
+              className="w-full p-1 focus:outline-none"
+            />
+            <span className="ml-2">
+              <FiSearch className="w-5 h-5" />
+            </span>
+          </div>
+
+          <span className="ml-10">
+            <FiShoppingCart className="w-5 h-5" />
           </span>
         </div>
-        <span className="ml-4">
-          <FiShoppingCart className="w-5 h-5" />
-        </span>
 
-        <div className="mx-20 py-10">
+        <div className="mx-20 py-5">
           <nav>
             <ul className="flex justify-between">
               <li>
